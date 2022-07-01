@@ -73,6 +73,9 @@ router.put('/updateNote/:id', fetchUser, async (req, res) => {
 
 
 })
+
+// -----------------
+// DELETE NOTES
 router.delete('/deleteNote/:id', fetchUser, async (req, res) => {
     try {
         const { title, description, tag } = req.body;
@@ -95,7 +98,6 @@ router.delete('/deleteNote/:id', fetchUser, async (req, res) => {
 
 
 })
-// -----------------
-// DELETE NOTES
+
 
 module.exports = router
