@@ -12,7 +12,7 @@ const {deleteNote} = context;
       </h5>
       <p>{note.description}</p>
       <i className="fa-solid fa-trash-can" onClick={()=>{deleteNote(note._id)}}></i>
-      <i className="fa-solid fa-pencil"></i>
+      {/* <i className="fa-solid fa-pencil"></i> */}
     </div>
   )
 }

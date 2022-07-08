@@ -15,7 +15,7 @@ const NoteState = (props) => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiZGYxOWU1MmNkZDFlYjk0ZDFmYjg2In0sImlhdCI6MTY1NjYxNTQ3N30.zW8XVvaGgthDvH951WaQCMMG95xHERdYZR2FYblVKYs',
+        'auth-token': localStorage.getItem('token'),
       },
     });
     const responseJson = await response.json();
@@ -32,7 +32,7 @@ const NoteState = (props) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiZGYxOWU1MmNkZDFlYjk0ZDFmYjg2In0sImlhdCI6MTY1NjYxNTQ3N30.zW8XVvaGgthDvH951WaQCMMG95xHERdYZR2FYblVKYs',
+        'auth-token': localStorage.getItem('token'),
       },
       body: JSON.stringify({ title, description, tag })
     });
@@ -40,15 +40,7 @@ const NoteState = (props) => {
     // console.log(response.json());
 
 
-    const note = {
-      "_id": "62c27f36638bec6415a97b14e",
-      "user": "62bdf19e52cdd1eb94d1fb86",
-      "title": title,
-      "description": description,
-      "tag": tag,
-      "date": "2022-07-04T05:48:38.540Z",
-      "__v": 0
-    };
+    const note = await response.json();
     setNotes(notes.concat(note));
   }
 
