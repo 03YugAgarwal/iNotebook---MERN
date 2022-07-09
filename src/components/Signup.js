@@ -38,15 +38,15 @@ const Signup = () => {
     <form onSubmit={handleSubmit}>
         
         <div className="login">
-            <label htmlFor="name-text" className="login-name" >Name</label>
-            <input type="text" name="name" value={credentials.name } onChange={onChange} id="name" required/>
-            <label htmlFor="email-text" className="login-email" >Email Address</label>
-            <input type="email" name="email" value={credentials.email } onChange={onChange} id="email" required/>
-            <label htmlFor="password-text" className="login-passowrd">Password</label>
-            <input type="password" name="password" value={credentials.password}  onChange={onChange} id="password" minLength={8} required/>
-            <label htmlFor="password-text" className="login-passowrd">Confirm Password</label>
-            <input type="password" name="cpassword" value={credentials.cpassword}  onChange={onChange} id="cpassword" minLength={8} required/>
-            <button type='submit'  >Submit</button>
+            <label htmlFor="name-text" className="login-label" >Name</label>
+            <input type="text" className="login-input" name="name" value={credentials.name } onChange={onChange} id="name" required/>
+            <label htmlFor="email-text" className="login-label" >Email Address</label>
+            <input type="email" className="login-input" name="email" value={credentials.email } onChange={onChange} id="email" required/>
+            <label htmlFor="password-text" className="login-label">Password</label>
+            <input type="password" className="login-input" name="password" value={credentials.password}  onChange={onChange} id="password" minLength={8} required/>
+            <label htmlFor="password-text" className="login-label">Confirm Password</label>
+            <input type="password" className="login-input" name="cpassword" value={credentials.cpassword}  onChange={onChange} id="cpassword" minLength={8} required/>
+            <button type='submit' className='login-button' >Submit</button>
         </div>
     </form>
     </>

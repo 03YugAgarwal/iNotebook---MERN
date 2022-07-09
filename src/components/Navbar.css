@@ -1,13 +1,13 @@
 .navbar{
     display: flex;
-    background-color: black;
+    background-color: #54BAB9;
     padding: 10px;
     font-family: 'Roboto Slab', serif;
 }
 
 .navbar-heading{
     margin-right: auto; 
-    color: white;
+    color: #F7ECDE;
     font-size: 30px;
 }
 
@@ -21,12 +21,17 @@
     font-size: 20px;
 }
 .link-active{
-    color: white;
+    color: #F7ECDE;
     text-decoration: none;
 }
 .link-{
     text-decoration: none;
-    color: grey;
+    color: #E9DAC1;
+    /* color: black; */
+}
+.link-:hover{
+    text-decoration: none;
+    color: #faf3e3b9;
     /* color: black; */
 }
 

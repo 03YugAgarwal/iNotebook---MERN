@@ -1,0 +1,38 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+    font-family: 'Roboto Slab', serif;
+    border: 2px solid #F7ECDE;
+    height: 70vh;
+    border-radius: 30px;
+    background-color: #F7ECDE;
+    box-shadow: 5px 5px 10px #e9ab40;
+}
+
+.login-label{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.login-input{
+    border: 2px solid #e9ab40 ;
+    width: 20%;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+.login-button{
+    background-color: #ffffff;
+    border: 2px solid #e9ab40 ;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 15px;
+}
