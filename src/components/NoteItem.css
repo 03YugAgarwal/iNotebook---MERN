@@ -1,0 +1,80 @@
+.add-note-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-note-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    border: 2px solid #FCF8E8;
+    background-color: #FCF8E8;
+    box-shadow: 5px 5px 15px #ECB390;
+    margin: 30px 20px;
+}
+
+.add-note-div{
+    display: flex;
+    flex-direction: column;
+}
+.add-note-div > label {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.add-note-div > input{
+    height: 30px;
+    width: 500px;
+    padding: 5px;
+    border: 2px solid #ECB390;
+    border-radius: 7px;
+}
+
+.add-note-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: #ffffff;
+    border: 2px solid #e9ab40 ;
+    /* padding: 10px 30px; */
+    /* font-weight: 700; */
+    /* font-size: 15px; */
+    border-radius: 15px;
+}
+
+
+
+.note-item-div{
+    /* margin-top: 20px; */
+    display: grid;
+    font-family: 'Roboto Slab', serif;
+    grid-template-columns: 27% 27% 27%;
+    grid-row-gap: 2rem;
+    justify-content: center;
+    border: 2px solid #FCF8E8;
+    margin: 20px 20px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    background-color: #FCF8E8;
+    box-shadow: 5px 5px 15px #ECB390;
+    /* align-items: center; */
+}
+
+.note-item-heading{
+    font-size: 1.2rem;
+}
+
+.note-primary-heading{
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.no-notes{
+    text-align: center;
+}

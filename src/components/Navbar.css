@@ -35,4 +35,14 @@
     /* color: black; */
 }
 
+.navbar-button{
+    border: none;
+    background-color: #54BAB9;
+    color: #E9DAC1;
+    margin: auto 0/30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+
 

@@ -23,15 +23,17 @@ const Notes = () => {
   }
 
   return (
-    <div>
+    <div className='notes-div'>
       
 
       <AddNote />
-      <h1>Your Notes</h1>
-      {notes.length===0 && 'No Notes to display.'}
-      {notes.map((note) => {
-        return <NoteItem key={note._id} updateNote={updateNote} note={note} />;
-      })}
+      <h1 className='note-primary-heading'>Your Notes</h1>
+      {notes.length===0 && <p className='no-notes'>No Notes to display.</p>}
+      <div className="note-item-div">
+        {notes.map((note) => {
+          return <NoteItem key={note._id} updateNote={updateNote} note={note} />;
+        })}
+      </div>
     </div>
   )
 }

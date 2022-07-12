@@ -21,11 +21,11 @@ export const Navbar = () => {
             <h3 className="navbar-heading">iNotebook</h3>
             <ul className="navbar-links">
                 <li className={`navbar-list`}><Link to="/" className={`link-${location.pathname==="/"?"active":""}`}>Home</Link></li>
-                <li className={`navbar-list`}><Link to="/about" className={`link-${location.pathname==="/about"?"active":""}`}>About</Link></li>
+                {/* <li className={`navbar-list`}><Link to="/about" className={`link-${location.pathname==="/about"?"active":""}`}>About</Link></li> */}
                 {!localStorage.getItem('token')?<div className="login-signupp">
                   <li className={`navbar-list`}><Link to="/login" className={`link-${location.pathname==="/login"?"active":""}`}>Login</Link></li>
                   <li className={`navbar-list`}><Link to="/signup" className={`link-${location.pathname==="/signup"?"active":""}`}>Sign Up</Link></li>
-                </div>:<li className="navbar-list"><button onClick={handleLogOut} >Logout</button></li>}
+                </div>:<li className="navbar-list"><button className='navbar-button' onClick={handleLogOut} >Logout</button></li>}
             </ul>
         </nav>
     </div>
